@@ -1,0 +1,5 @@
+The C program will output every initialized 16-bit random number to the terminal. 
+Everytime something is printed to the terminal, a line counter is incremented in the program.
+The file exercise3d.txt has been made, that is opened with: FILE *output_file = fopen("exercise3d.txt", "a");
+The "a" parameter of fopen allows for the file to be read from and written to by the program.
+Eventually the program will terminate, because the value is 42, at that point the program also writes the line counter to the text file. 
