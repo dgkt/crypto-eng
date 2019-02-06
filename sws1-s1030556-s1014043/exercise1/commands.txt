@@ -1,0 +1,16 @@
+cd Documents/
+mkdir sws1-s1030556-s1014043
+cd sws1-s1030556-s1014043/
+mkdir exercise1
+mkdir exercise2
+mkdir exercise3
+touch names.txt
+nano names.txt
+cd exercise1
+touch 1b.txt
+cd ../..
+du -sb sws1-s1030556-s1014043/
+cd sws1-s1030556-s1014043/exercise1
+nano 1b.txt
+touch commands.txt
+nano commands.txt
