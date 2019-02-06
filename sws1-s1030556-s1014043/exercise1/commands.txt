@@ -1,4 +1,6 @@
 cd Documents/
+mkdir Hacking-in-C
+cd Hacking-in-C
 mkdir sws1-s1030556-s1014043
 cd sws1-s1030556-s1014043/
 mkdir exercise1
