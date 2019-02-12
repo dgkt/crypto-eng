@@ -1,0 +1,6 @@
+int main (void){
+short i = 0x1234;
+char x = -127;
+long sn1 = <STUDENT NUMBER OF TEAM MEMBER 1, WITHOUT LEADING S>;
+long sn2 = <STUDENT NUMBER OF TEAM MEMBER 2, WITHOUT LEADING S>;
+int y[2] = {0x11223344,0x44332211};...}
