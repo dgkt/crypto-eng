@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 void addvector(int *r, const int *a, const int *b, unsigned int len)
 {
 	unsigned int i;
@@ -9,19 +10,47 @@ void addvector(int *r, const int *a, const int *b, unsigned int len)
 	}
 }
 
+int memcmp1(const void *s1, const void *s2, size_t n)
+{
+	const unsigned char *p1 = s1;
+	const unsigned char *p2 = s2;
+
+	for(size_t index = 0; index<n; index++, p1++, p2++)
+	{
+		if(*p1 < *p2)
+		{
+			return -1;
+		}
+		else if (*p1 > *p2)
+		{
+			return 1;
+		}
+	}
+	return 0; 
+}
+
+int memcmp_backwards(const void *s1, const void *s2, size_t n)
+{
+	const unsigned char *p1 = s1 + n - 1;
+	const unsigned char *p2 = s2 + n -1;
+
+	for(; n>0; n--, p1--, p2--)
+	{
+		if(*p1 < *p2)
+		{
+			return -1;
+		}
+		else if (*p1 > *p2)
+		{
+			return 1;
+		}
+	}
+	return 0; 
+}
+
 int main ()
 {
-	int a[] = { 1, 2, 3, 4, 5, 6 };
-	int b[] = { 7, 8, 9, 10, 11, 12 };
-	int r[6] = {0, 0, 0, 0, 0, 0};
-	addvector(r, a, b, 6);
-	for(int index = 0; index<6; index++)
-	{
-		printf("%d ", r[index]);
-	}
-
     return 0;
-
 }
 
 
