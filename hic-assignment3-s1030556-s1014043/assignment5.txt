@@ -1,0 +1,2 @@
+5b Strings are meant to be immutable types, because in C strings are character arrays, that will decay to pointers, so you are not allowed to set the variable value directly, you can only use the pointer to set the memory that the pointer points to.
+5c The last byte is reserved for the null-terminator. If the null-terminator is omitted, then functions like printf will keep reading strings until they hit the next null terminator (possibly of a string value that is adjacent in memory).

@@ -1,0 +1,5 @@
+Useful resources:
+Q1: 
+https://stackoverflow.com/questions/28488554/how-to-measure-a-functions-stack-usage-in-c
+Q2:
+https://stackoverflow.com/questions/13202492/maximum-size-of-malloc
