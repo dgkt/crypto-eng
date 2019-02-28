@@ -1,0 +1,12 @@
+This program gets your password from the /etc/shadow like password = fopen(/etc/shadow, "r");
+Initialize variable int ok = 0;
+Then a buffer is declared to store the passphrase in like char buffer[100];
+Then the program reads the the entered passphrase by using scanf(%s, buffer);
+Then the hash of passphrase and password is calculated and compared to eachother:
+if(H(password) == H(passphrase))
+	ok = 1;
+Then the program does something like:
+if(ok)
+	printf("You're root");
+exit(0);
+
