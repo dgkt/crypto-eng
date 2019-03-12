@@ -1,9 +1,0 @@
-cd ../exercise2
-touch 2a.txt
-wget https://cryptojedi.org/peter/teaching/genome.txt
-cat genome.txt | tr -d "\n" | grep -o -E "GATTACA" | wc -l
-nano 2a.txt
-
-
-
-

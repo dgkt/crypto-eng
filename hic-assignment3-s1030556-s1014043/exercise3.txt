@@ -1,7 +1,0 @@
-Assume the first printed: 0x7fffeb578710
-(a) 0x7fffeb578710 - using & basically it printed the address of x. However, since arrays are passed by reference anyway (therefore decaying to a pointer), there is no difference between printing x or &x.
-(b) 0x7fffeb578714 - it actually adds sizeof(int)to x, which in this case is 4, because ints are 4 bytes long.
-(c) 0x7fffeb578720 - it printed the address of x, but add the sizeof(int[4]) to it, which is 16, because &x is a pointer of type int[4]. Meaning the array has 4 elements, of type int, making for a total of 16 bytes. Converting 16 to hexadecimal notation gives 10, so it added 10 to &x.
-(d) 23 - it printed the first value of the array, because passing the array decays to a pointer to the first element, which is x[0] = 23.
-(e) 28 - it adds the first value of the array (which is 23) with the value of x[2] (which is 5), so adding these together gives 28.
-(f) 151 - it adds the first value of the  array (which is 23) with the fourth value of the array (which is 1), but the 1 is shifted left by 7, so it became 10000000 (which is 128), so it added both 23 and 128 together, which is 151.

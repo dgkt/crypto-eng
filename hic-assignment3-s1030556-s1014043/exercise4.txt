@@ -1,4 +1,0 @@
-The OS kills the program, because it requires way too much memory. This happens because there are four malloc() statements, but only two free().
-To make matters even worse both matrices have nested mallocs. In every iteration of the while loop, some memory is allocated for matrix m and mt, but within those matrices we see: m[i] = malloc(1000*sizeof(unsigned long long)); However, this memory is never freed in the while loop, so we get a memory leak and the OS has to kill the process before the whole system crashes.
-
-To fix this, before freeing the matrices, the programmer also has to free all the inner-nested memory, for example by looping over the values in m[i] and checking whether or not a valid pointer to this variable exists, and if so, free the memory that the pointer points towards.

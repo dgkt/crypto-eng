@@ -1,5 +1,0 @@
-1111111111111111111111111111111111111
-
-This input gives you root access, because the ok variable is next to the passphrase buffer. If you copy all 1s in the passphrase buffer, the ok variable variable gets overflown and gets filled with 1, instead of the initialized 0.
-The ok variable is checked evaluated before printing you're root to the screen.
-

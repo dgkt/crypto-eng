@@ -1,4 +1,0 @@
-in gdb
-run aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa�HUUUU
-where �HUUUU stands for the pointer to the function which is located at 0x5555555548b4 on our device
-The program jumps to this function, but immediately receives a segfault as well.
